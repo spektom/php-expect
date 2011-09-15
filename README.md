@@ -1,6 +1,6 @@
 PHP expect
 ==========
-This PHP extension allows to interact with processes through PTY, using expect library.
+This PHP extension allows to interact with processes through PTY, using [expect library](http://en.wikipedia.org/wiki/Expect).
 
 Documentation
 --------------
