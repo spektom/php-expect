@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.0" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+http://pear.php.net/dtd/tasks-1.0.xsd
+http://pear.php.net/dtd/package-2.0
+http://pear.php.net/dtd/package-2.0.xsd">
+ <name>expect</name>
+ <channel>pecl.php.net</channel>
+ <summary>PHP extension for expect library</summary>
+ <description>This extension allows to interact with processes through PTY, using expect library.
+ </description>
+ <lead>
+  <name>Michael Spector</name>
+  <user>michael</user>
+  <email>michael@php.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-06-23</date>
+ <time>23:40:00</time>
+ <version>
+  <release>0.3.0</release>
+  <api>0.3.0</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.php.net/license">PHP License</license>
+ <notes>
+Fixed setting INI parameters (Bug #22566)
+Fixed Segmentation Fault on use (Bug #21578)
+ </notes>
+ <contents>
+  <dir name="/">
+   <file name="config.m4" role="src" />
+   <file name="config.w32" role="src" />
+   <file name="expect.c" role="src" />
+   <file name="expect.dsp" role="src" />
+   <file name="expect_fopen_wrapper.c" role="src" />
+   <file name="php_expect.h" role="src" />
+  </dir> <!-- / -->
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>4.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0b1</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <providesextension>expect</providesextension>
+ <extsrcrelease />
+</package>

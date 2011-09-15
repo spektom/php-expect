@@ -1,0 +1,12 @@
+// $ Id: $
+// vim:ft=javascript
+
+ARG_WITH('expect' , 'expect support', 'no');
+
+if (PHP_EXPECT != "no") {
+	if (CHECK_HEADER_ADD_INCLUDE("expect.h", "CFLAGS_EXPECT", PHP_EXPECT) && CHECK_LIB("expect.lib", "expect", PHP_EXPECT)) {
+		EXTENSION("expect", "expect.c", PHP_EXPECT_SHARED, null, "php_expect.dll");
+	} else {
+		WARNING("expect not enabled; libraries and headers not found");
+	}
+}
